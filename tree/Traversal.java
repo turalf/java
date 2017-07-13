@@ -12,6 +12,15 @@ public class Traversal{
 		}
 	}
 
+	public static void preOrderTraverseRec(TreeNode tree){
+		if(tree == null)
+			return;
+
+		System.out.print(tree.val + ">");
+		preOrderTraverseRec(tree.left);
+		preOrderTraverseRec(tree.right);
+	}
+
 	public static void inOrderTraverseRec(TreeNode tree){
 		if(tree == null)
 				return;
