@@ -3,7 +3,7 @@ package tree;
 public class TreeNode{
 
 	public TreeNode left, right, parent;
-	int val;
+	public 	int val;
 
 	public TreeNode(int val){
 		this.val = val;
